@@ -61,8 +61,6 @@ def create_png(url, outfile):
   m = Basemap(projection='kav7', lon_0=-90, resolution = 'l', area_thresh = 1000.0)
   m.drawcoastlines()
   m.drawcountries()
-  fill_color = ax.get_axis_bgcolor()
-  fill_color = ax.get_fc() 
   m.drawmapboundary(fill_color='0.3')
   m.drawparallels(np.arange(-90.,99.,30.))
   junk = m.drawmeridians(np.arange(-180.,180.,60.))
